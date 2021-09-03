@@ -127,7 +127,7 @@ input {
 }
 
 nav {
-  background-color: white;
+  background-color: var(--bg-primary);
   display: none;
   position: absolute;
   top: 5rem;
@@ -145,6 +145,11 @@ nav {
 
 .nav__list-item {
   padding: 1em;
+}
+
+.nav__link {
+  color: var(--clr-primary);
+  font-weight: 500;
 }
 
 .nav-bar__btn {
