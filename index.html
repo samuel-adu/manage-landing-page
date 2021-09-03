@@ -1,101 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav-bar">
+          <img src="images/logo.svg" alt="" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Manage landing page</title>
+          <button class="nav-toggle">
+            <img
+              src="images/icon-hamburger.svg"
+              class="icon-hamburger"
+              alt=""
+            />
+            <img src="images/icon-close.svg" class="icon-close" alt="" />
+          </button>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Pricing</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Product</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">About Us</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Careers</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Community</a>
+              </li>
+            </ul>
+          </nav>
 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
+          <a href="#" class="btn nav-bar__btn">Get Started</a>
+        </div>
+      </div>
+    </header>
 
-  Get Started
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="grid">
+            <img
+              src="images/illustration-intro.svg"
+              alt=""
+              class="intro__img"
+            />
 
-  Bring everyone together to build better products.
+            <div class="intro-body">
+              <h1 class="main-heading">
+                Bring everyone together to build better products
+              </h1>
+              <p>
+                Manage makes it simple for software teams to plan day-to-day
+                tasks while keeping the larger team goals in view.
+              </p>
 
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
+              <a href="#" class="btn">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  Get Started
+      <section class="about">
+        <div class="container">
+          <div class="grid">
+            <div class="about-intro">
+              <h2 class="heading">What’s different about Manage?</h2>
+              <p>
+                Manage provides all the functionality your team needs, without
+                the complexity. Our software is tailor-made for modern digital
+                product teams.
+              </p>
+            </div>
 
-  What’s different about Manage?
+            <div class="about-body">
+              <div>
+                <h3 class="sub-heading">
+                  <span class="numbering">01</span>Track company-wide progress
+                </h3>
+                <p>
+                  See how your day-to-day tasks fit into the wider vision. Go
+                  from tracking progress at the milestone level all the way done
+                  to the smallest of details. Never lose sight of the bigger
+                  picture again.
+                </p>
+              </div>
 
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
+              <div>
+                <h3 class="sub-heading">
+                  <span class="numbering">02</span>Advanced built-in reports
+                </h3>
+                <p>
+                  Set internal delivery estimates and track progress toward
+                  company goals. Our customisable dashboard helps you build out
+                  the reports you need to keep key stakeholders informed.
+                </p>
+              </div>
 
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
+              <div>
+                <h3 class="sub-heading">
+                  <span class="numbering">03</span>Everything you need in one
+                  place
+                </h3>
+                <p>
+                  Stop jumping from one service to another to communicate, store
+                  files, track tasks and share documents. Manage offers an
+                  all-in-one team productivity solution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
+      <section class="testimonials">
+        <div class="container">
+          <h2 class="heading">What they’ve said</h2>
+          <div class="grid grid-4">
+            <div class="testimonial">
+              <img
+                src="images/avatar-anisha.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="sub-heading">Oluwafunmilayo Fademi</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
 
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
+            <div class="testimonial">
+              <img
+                src="images/avatar-ali.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="sub-heading">Ali Bravo</h3>
+              <p>
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
 
-  What they’ve said
+            <div class="testimonial">
+              <img
+                src="images/avatar-richard.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="sub-heading">Richard Watts</h3>
+              <p>
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
 
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
+            <div class="testimonial">
+              <img
+                src="images/avatar-shanai.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="sub-heading">Shanai Gough</h3>
+              <p>
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </div>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+      </section>
 
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
+      <section class="simplify">
+        <div class="container">
+          <div class="flex">
+            <p class="heading">Simplify how your team works today</p>
+            <a href="#" class="btn btn-outline">Get Started</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="input">
+            <input type="text" placeholder="Updates in your inbox…" />
+            <button href="#" class="btn">GO</button>
+          </div>
 
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
+          <div class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Home</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Pricing</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Products</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">About Us</a>
+              </li>
+            </ul>
 
-  Get Started
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Careers</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Community</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
 
-  Simplify how your team works today.
-  Get Started
+          <ul class="social__list">
+            <li class="social__list-item">
+              <a href="#" class="social__link"
+                ><img src="images/icon-facebook.svg" alt=""
+              /></a>
+            </li>
+            <li class="social__list-item">
+              <a href="#" class="social__link"
+                ><img src="images/icon-youtube.svg" alt=""
+              /></a>
+            </li>
+            <li class="social__list-item">
+              <a href="#" class="social__link"
+                ><img src="images/icon-twitter.svg" alt=""
+              /></a>
+            </li>
+            <li class="social__list-item">
+              <a href="#" class="social__link"
+                ><img src="images/icon-pinterest.svg" alt=""
+              /></a>
+            </li>
+            <li class="social__list-item">
+              <a href="#" class="social__link"
+                ><img src="images/icon-instagram.svg" alt=""
+              /></a>
+            </li>
+          </ul>
 
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
+          <img src="images/logo.svg" alt="" class="logo" />
 
-  Updates in your inbox…
-  Go
+          <p class="copyright attribution">
+            Copyright
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All Rights Reserved
+          </p>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor </a
+          >Coded by <a href="#">Samuel Adu</a>
+        </div>
+      </div>
+    </footer>
 
-  Copyright 2020. All Rights Reserved
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
