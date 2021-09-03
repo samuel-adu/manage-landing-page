@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ### Primary */
+
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+
+  /* ### Neutral */
+
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  --bg-primary: hsl(12, 88%, 59%);
+  --bg-secondary: hsl(233, 12%, 13%);
+  --bg-primary-light: hsl(13, 100%, 96%);
+  --bg-neutral: hsl(0, 0%, 98%);
+
+  --clr-primary: hsl(228, 39%, 23%);
+  --clr-secondary: hsl(227, 12%, 61%);
+
+  --ff-primary: "Be Vietnam";
+}
+
+/* base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Be Vietnam", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--clr-secondary);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+/* typography */
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 1rem;
+}
+
+.main-heading {
+  font-family: var(--ff-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--clr-primary);
+}
+
+.heading {
+  font-family: var(--ff-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--clr-primary);
+}
+
+.sub-heading {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--clr-primary);
+}
+
+/* Utilities */
+.btn {
+  padding: 0.5em 1.5em;
+  background-color: var(--bg-primary);
+  border-radius: 1.5em;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  color: var(--bg-primary-light);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.btn-outline {
+  background-color: var(--bg-primary-light);
+  color: var(--clr-primary);
+}
+
+input {
+  padding: 0.5em 1.5em;
+  border-radius: 1.5em;
+  border: 0;
+  font-size: 12px;
+  margin: 1rem 0;
+}
+
+/* navigation */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+  position: relative;
+}
+
+nav {
+  background-color: white;
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  right: 0;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.nav__list-item {
+  padding: 1em;
+}
+
+.nav-bar__btn {
+  display: none;
+}
+
+.icon-close {
+  display: none;
+}
+
+.nav-open .nav {
+  display: block;
+}
+
+.nav-open .icon-close {
+  display: block;
+}
+
+.nav-open .icon-hamburger {
+  display: none;
+}
+
+/* layout */
+.container {
+  padding: 0 1em;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+/* intro section */
+.intro {
+  text-align: center;
+}
+
+/* about section */
+
+.about {
+  text-align: center;
+}
+
+.about .sub-heading {
+  background-color: var(--bg-primary-light);
+  padding: 0.5em 0;
+}
+
+.about-body {
+  text-align: left;
+}
+
+.numbering {
+  background-color: var(--bg-primary);
+  color: var(--bg-primary-light);
+  border-radius: 1.25em;
+  padding: 0.5em 1.5em;
+  margin-right: 0.5rem;
+}
+
+/* testimonial section */
+.testimonials {
+  text-align: center;
+}
+
+.testimonials .heading {
+  padding-bottom: 2em;
+}
+
+.testimonial {
+  background-color: var(--bg-neutral);
+  padding: 4em 2em 2em 2em;
+  margin: 5rem 0;
+  position: relative;
+}
+
+.testimonial__img {
+  position: absolute;
+  top: -5rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* simplify section */
+.simplify {
+  background-color: var(--bg-primary);
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0;
+}
+
+.simplify .heading {
+  color: var(--bg-primary-light);
+  font-size: 2.5rem;
+}
+
+.simplify .btn {
+  background-color: var(--bg-primary-light);
+  color: var(--bg-primary);
+}
+
+/* footer */
+footer {
+  background-color: var(--bg-secondary);
+  padding: 2em 0;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav__list {
+  text-align: left;
+  padding: 1em 2em;
+}
+
+.footer-nav__list-item {
+  padding: 0.5em;
+}
+
+.footer-nav__link {
+  color: white;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em 0;
+}
+
+.footer .logo {
+  margin: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 0 2em;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* navigation */
+  .nav-bar {
+    padding: 0;
+  }
+
+  .nav {
+    display: block;
+    position: static;
+  }
+
+  .nav__list {
+    flex-direction: row;
+  }
+
+  .nav__list-item:last-child {
+    padding-right: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  /* intro section */
+  .intro__img {
+    order: 2;
+  }
+
+  .intro-body {
+    text-align: left;
+  }
+
+  .about {
+    text-align: left;
+  }
+
+  .simplify .heading {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .footer-nav {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .social__list {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .input {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .copyright {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (min-width: 800px) {
+  /* navigation */
+  .nav-bar__btn {
+    display: block;
+  }
+
+  /* layout */
+  .container {
+    width: 90%;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about .sub-heading {
+    background-color: transparent;
+  }
+
+  .about-body p {
+    margin-left: 4.5rem;
+  }
+
+  .testimonials .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+}
