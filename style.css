@@ -330,6 +330,7 @@ footer {
   .nav {
     display: block;
     position: static;
+    background-color: white;
   }
 
   .nav__list {
