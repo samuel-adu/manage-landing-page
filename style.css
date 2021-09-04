@@ -39,6 +39,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--clr-secondary);
+  /* background-image: url("images/bg-tablet-pattern.svg"); */
+  /* background-size: cover; */
 }
 
 img {
@@ -127,7 +129,7 @@ input {
 }
 
 nav {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-primary-light);
   display: none;
   position: absolute;
   top: 5rem;
@@ -149,7 +151,7 @@ nav {
 
 .nav__link {
   color: var(--clr-primary);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .nav-bar__btn {
@@ -236,6 +238,9 @@ section {
 /* simplify section */
 .simplify {
   background-color: var(--bg-primary);
+  background-image: url("images/bg-simplify-section-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 1em;
   margin-bottom: 0;
@@ -350,6 +355,10 @@ footer {
 
   .about {
     text-align: left;
+  }
+
+  .simplify {
+    background-image: url("images/bg-simplify-section-desktop.svg");
   }
 
   .simplify .heading {
