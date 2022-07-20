@@ -17,12 +17,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <title>Manage landing page | Frontend Mentor</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
     <header>
@@ -30,16 +32,19 @@
         <div class="nav-bar">
           <img src="images/logo.svg" alt="" />
 
-          <button class="nav-toggle">
+          <a class="nav-toggle nav-open-btn">
             <img
               src="images/icon-hamburger.svg"
               class="icon-hamburger"
               alt=""
             />
-            <img src="images/icon-close.svg" class="icon-close" alt="" />
-          </button>
+          </a>
 
           <nav class="nav">
+            <a class="nav-toggle nav-close-btn">
+              <img src="images/icon-close.svg" class="icon-close" alt="" />
+            </a>
+
             <ul class="nav__list">
               <li class="nav__list-item">
                 <a class="nav__link" href="#">Pricing</a>
@@ -65,9 +70,9 @@
     </header>
 
     <main>
-      <section class="intro">
+      <section class="">
         <div class="container">
-          <div class="grid">
+          <div class="intro grid">
             <img
               src="images/illustration-intro.svg"
               alt=""
@@ -144,6 +149,7 @@
       <section class="testimonials">
         <div class="container">
           <h2 class="heading">What they’ve said</h2>
+
           <div class="grid grid-4">
             <div class="testimonial">
               <img
@@ -151,7 +157,7 @@
                 alt=""
                 class="testimonial__img"
               />
-              <h3 class="sub-heading">Oluwafunmilayo Fademi</h3>
+              <h3 class="sub-heading">Anisha Li</h3>
               <p>
                 “Manage has supercharged our team’s workflow. The ability to
                 maintain visibility on larger milestones at all times keeps
@@ -208,8 +214,8 @@
       <section class="simplify">
         <div class="container">
           <div class="flex">
-            <p class="heading">Simplify how your team works today</p>
-            <a href="#" class="btn btn-outline">Get Started</a>
+            <p class="heading">Simplify how your team works today.</p>
+            <a href="#" class="btn btn-secondary">Get Started</a>
           </div>
         </div>
       </section>
@@ -289,12 +295,6 @@
             </script>
             All Rights Reserved
           </p>
-        </div>
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor </a
-          >Coded by <a href="#">Samuel Adu</a>
         </div>
       </div>
     </footer>
